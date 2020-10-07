@@ -24,11 +24,11 @@ import org.osgi.service.component.annotations.Component;
 	},
 	service = PanelCategory.class
 )
-public class OSPControlPanelCategory extends BasePanelCategory {
+public class OSPControlPanelCategoryIcebreaker extends BasePanelCategory {
 
 	@Override
 	public String getKey() {
-		return OSPControlPanelCategoryKeys.CONTROL_PANEL_CATEGORY;
+		return OSPControlPanelCategoryKeys.CONTROL_PANEL_CATEGORY_ICEBREAKER;
 	}
 
 	@Override
@@ -36,7 +36,7 @@ public class OSPControlPanelCategory extends BasePanelCategory {
 		ResourceBundle resourceBundle = ResourceBundleUtil.getBundle(
 			"content.Language", locale, getClass());
 
-		return LanguageUtil.get(resourceBundle, "category.osp");
+		return LanguageUtil.get(resourceBundle, "category.osp-icebreaker");
 //		return "Open Science Platform";
 	}
 
